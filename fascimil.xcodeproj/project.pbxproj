@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE4D274E1CE0735300D59DF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D274D1CE0735300D59DF8 /* AppDelegate.swift */; };
+		BE4D27501CE0735300D59DF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D274F1CE0735300D59DF8 /* ViewController.swift */; };
+		BE4D27531CE0735300D59DF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4D27511CE0735300D59DF8 /* Main.storyboard */; };
+		BE4D27551CE0735300D59DF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4D27541CE0735300D59DF8 /* Images.xcassets */; };
+		BE4D27581CE0735300D59DF8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE4D27561CE0735300D59DF8 /* LaunchScreen.xib */; };
+		BE4D27641CE0735300D59DF8 /* fascimilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D27631CE0735300D59DF8 /* fascimilTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE4D275E1CE0735300D59DF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE4D27401CE0735300D59DF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE4D27471CE0735300D59DF8;
+			remoteInfo = fascimil;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE4D27481CE0735300D59DF8 /* fascimil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fascimil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4D274C1CE0735300D59DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4D274D1CE0735300D59DF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE4D274F1CE0735300D59DF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE4D27521CE0735300D59DF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE4D27541CE0735300D59DF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE4D27571CE0735300D59DF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BE4D275D1CE0735300D59DF8 /* fascimilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fascimilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4D27621CE0735300D59DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4D27631CE0735300D59DF8 /* fascimilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fascimilTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE4D27451CE0735300D59DF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4D275A1CE0735300D59DF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE4D273F1CE0735300D59DF8 = {
+			isa = PBXGroup;
+			children = (
+				BE4D274A1CE0735300D59DF8 /* fascimil */,
+				BE4D27601CE0735300D59DF8 /* fascimilTests */,
+				BE4D27491CE0735300D59DF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE4D27491CE0735300D59DF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE4D27481CE0735300D59DF8 /* fascimil.app */,
+				BE4D275D1CE0735300D59DF8 /* fascimilTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE4D274A1CE0735300D59DF8 /* fascimil */ = {
+			isa = PBXGroup;
+			children = (
+				BE4D274D1CE0735300D59DF8 /* AppDelegate.swift */,
+				BE4D274F1CE0735300D59DF8 /* ViewController.swift */,
+				BE4D27511CE0735300D59DF8 /* Main.storyboard */,
+				BE4D27541CE0735300D59DF8 /* Images.xcassets */,
+				BE4D27561CE0735300D59DF8 /* LaunchScreen.xib */,
+				BE4D274B1CE0735300D59DF8 /* Supporting Files */,
+			);
+			path = fascimil;
+			sourceTree = "<group>";
+		};
+		BE4D274B1CE0735300D59DF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE4D274C1CE0735300D59DF8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE4D27601CE0735300D59DF8 /* fascimilTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE4D27631CE0735300D59DF8 /* fascimilTests.swift */,
+				BE4D27611CE0735300D59DF8 /* Supporting Files */,
+			);
+			path = fascimilTests;
+			sourceTree = "<group>";
+		};
+		BE4D27611CE0735300D59DF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE4D27621CE0735300D59DF8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE4D27471CE0735300D59DF8 /* fascimil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE4D27671CE0735300D59DF8 /* Build configuration list for PBXNativeTarget "fascimil" */;
+			buildPhases = (
+				BE4D27441CE0735300D59DF8 /* Sources */,
+				BE4D27451CE0735300D59DF8 /* Frameworks */,
+				BE4D27461CE0735300D59DF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fascimil;
+			productName = fascimil;
+			productReference = BE4D27481CE0735300D59DF8 /* fascimil.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE4D275C1CE0735300D59DF8 /* fascimilTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE4D276A1CE0735300D59DF8 /* Build configuration list for PBXNativeTarget "fascimilTests" */;
+			buildPhases = (
+				BE4D27591CE0735300D59DF8 /* Sources */,
+				BE4D275A1CE0735300D59DF8 /* Frameworks */,
+				BE4D275B1CE0735300D59DF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE4D275F1CE0735300D59DF8 /* PBXTargetDependency */,
+			);
+			name = fascimilTests;
+			productName = fascimilTests;
+			productReference = BE4D275D1CE0735300D59DF8 /* fascimilTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE4D27401CE0735300D59DF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = oem;
+				TargetAttributes = {
+					BE4D27471CE0735300D59DF8 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					BE4D275C1CE0735300D59DF8 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = BE4D27471CE0735300D59DF8;
+					};
+				};
+			};
+			buildConfigurationList = BE4D27431CE0735300D59DF8 /* Build configuration list for PBXProject "fascimil" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE4D273F1CE0735300D59DF8;
+			productRefGroup = BE4D27491CE0735300D59DF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE4D27471CE0735300D59DF8 /* fascimil */,
+				BE4D275C1CE0735300D59DF8 /* fascimilTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE4D27461CE0735300D59DF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4D27531CE0735300D59DF8 /* Main.storyboard in Resources */,
+				BE4D27581CE0735300D59DF8 /* LaunchScreen.xib in Resources */,
+				BE4D27551CE0735300D59DF8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4D275B1CE0735300D59DF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE4D27441CE0735300D59DF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4D27501CE0735300D59DF8 /* ViewController.swift in Sources */,
+				BE4D274E1CE0735300D59DF8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4D27591CE0735300D59DF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4D27641CE0735300D59DF8 /* fascimilTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE4D275F1CE0735300D59DF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE4D27471CE0735300D59DF8 /* fascimil */;
+			targetProxy = BE4D275E1CE0735300D59DF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE4D27511CE0735300D59DF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE4D27521CE0735300D59DF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE4D27561CE0735300D59DF8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE4D27571CE0735300D59DF8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE4D27651CE0735300D59DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE4D27661CE0735300D59DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE4D27681CE0735300D59DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = fascimil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE4D27691CE0735300D59DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = fascimil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BE4D276B1CE0735300D59DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = fascimilTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fascimil.app/fascimil";
+			};
+			name = Debug;
+		};
+		BE4D276C1CE0735300D59DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = fascimilTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fascimil.app/fascimil";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE4D27431CE0735300D59DF8 /* Build configuration list for PBXProject "fascimil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4D27651CE0735300D59DF8 /* Debug */,
+				BE4D27661CE0735300D59DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE4D27671CE0735300D59DF8 /* Build configuration list for PBXNativeTarget "fascimil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4D27681CE0735300D59DF8 /* Debug */,
+				BE4D27691CE0735300D59DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE4D276A1CE0735300D59DF8 /* Build configuration list for PBXNativeTarget "fascimilTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4D276B1CE0735300D59DF8 /* Debug */,
+				BE4D276C1CE0735300D59DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE4D27401CE0735300D59DF8 /* Project object */;
+}
