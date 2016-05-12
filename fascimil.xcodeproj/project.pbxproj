@@ -13,6 +13,8 @@
 		BE4D27551CE0735300D59DF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4D27541CE0735300D59DF8 /* Images.xcassets */; };
 		BE4D27581CE0735300D59DF8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE4D27561CE0735300D59DF8 /* LaunchScreen.xib */; };
 		BE4D27641CE0735300D59DF8 /* fascimilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D27631CE0735300D59DF8 /* fascimilTests.swift */; };
+		BE4D276E1CE08BD500D59DF8 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D276D1CE08BD500D59DF8 /* ViewController2.swift */; };
+		BE4D27701CE0CA9900D59DF8 /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D276F1CE0CA9900D59DF8 /* Controllers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		BE4D275D1CE0735300D59DF8 /* fascimilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fascimilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4D27621CE0735300D59DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE4D27631CE0735300D59DF8 /* fascimilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fascimilTests.swift; sourceTree = "<group>"; };
+		BE4D276D1CE08BD500D59DF8 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		BE4D276F1CE0CA9900D59DF8 /* Controllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				BE4D274D1CE0735300D59DF8 /* AppDelegate.swift */,
 				BE4D274F1CE0735300D59DF8 /* ViewController.swift */,
 				BE4D27511CE0735300D59DF8 /* Main.storyboard */,
+				BE4D276F1CE0CA9900D59DF8 /* Controllers.swift */,
+				BE4D276D1CE08BD500D59DF8 /* ViewController2.swift */,
 				BE4D27541CE0735300D59DF8 /* Images.xcassets */,
 				BE4D27561CE0735300D59DF8 /* LaunchScreen.xib */,
 				BE4D274B1CE0735300D59DF8 /* Supporting Files */,
@@ -214,6 +220,8 @@
 			files = (
 				BE4D27501CE0735300D59DF8 /* ViewController.swift in Sources */,
 				BE4D274E1CE0735300D59DF8 /* AppDelegate.swift in Sources */,
+				BE4D276E1CE08BD500D59DF8 /* ViewController2.swift in Sources */,
+				BE4D27701CE0CA9900D59DF8 /* Controllers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +415,7 @@
 				BE4D27691CE0735300D59DF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE4D276A1CE0735300D59DF8 /* Build configuration list for PBXNativeTarget "fascimilTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +424,7 @@
 				BE4D276C1CE0735300D59DF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
