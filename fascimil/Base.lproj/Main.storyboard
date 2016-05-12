@@ -46,7 +46,44 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-714" y="108"/>
+            <point key="canvasLocation" x="-828" y="-125"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="qf9-vZ-628">
+            <objects>
+                <viewController storyboardIdentifier="ViewController3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6jp-2b-mO8" customClass="ViewController3" customModule="fascimil" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o3Q-23-xoI"/>
+                        <viewControllerLayoutGuide type="bottom" id="qRE-0a-KcN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nCb-xe-OBe">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3R5-g4-iC4">
+                                <rect key="frame" x="150" y="0.0" width="285" height="320"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01B-R0-mbZ">
+                                <rect key="frame" x="506" y="282" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="&lt;-"/>
+                                <connections>
+                                    <segue destination="Ojj-ON-Gr5" kind="show" id="5fr-6D-SVB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="buttonArrow" destination="01B-R0-mbZ" id="nrd-YM-Kk6"/>
+                        <outlet property="imagen" destination="3R5-g4-iC4" id="igN-HX-oBj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SAT-QL-kGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-272" y="542"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="ME2-NC-m2F">
@@ -63,10 +100,16 @@
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LjY-e6-Nt9">
                                 <rect key="frame" x="0.0" y="0.0" width="285" height="320"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Pii-do-PS0" appends="YES" id="A5r-fH-ntZ"/>
+                                </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oDO-id-vsc">
                                 <rect key="frame" x="283" y="0.0" width="285" height="320"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="PJN-IP-0Ih" appends="YES" id="JYL-U6-M8q"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -80,8 +123,21 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAg-0X-oCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Pii-do-PS0">
+                    <connections>
+                        <action selector="imgTapLeft:" destination="Ojj-ON-Gr5" id="9pO-0K-LMK"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="PJN-IP-0Ih">
+                    <connections>
+                        <action selector="imgTapRight:" destination="Ojj-ON-Gr5" id="NF2-S7-Kiw"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-246" y="74"/>
+            <point key="canvasLocation" x="-218" y="90"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5fr-6D-SVB"/>
+    </inferredMetricsTieBreakers>
 </document>

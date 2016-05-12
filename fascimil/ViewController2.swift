@@ -52,6 +52,29 @@ class ViewController2: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func imgTapLeft(sender: AnyObject) {
+        
+        control.position="L"
+        
+        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextView = storyboard.instantiateViewControllerWithIdentifier("ViewController3") as ViewController3
+        self.presentViewController(nextView, animated: true, completion: nil)
+
+        
+    }
+    
+    @IBAction func imgTapRight(sender: AnyObject) {
+        
+        control.position="R"
+        
+        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextView = storyboard.instantiateViewControllerWithIdentifier("ViewController3") as ViewController3
+        self.presentViewController(nextView, animated: true, completion: nil)
+
+        
+    }
+    
+    
     func rotated(){
         if(UIDeviceOrientationIsLandscape(UIDevice.currentDevice().orientation)){
 
