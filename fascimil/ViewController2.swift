@@ -30,7 +30,7 @@ class ViewController2: UIViewController {
         
         self.view.backgroundColor=UIColor.blackColor()
         
-        print("\nPAG-VIEW2: \(control.numImg)")
+        print("\nPAG V: \(control.numImg)")
         
         savePag=control.numImg
         control.saveP=savePag
@@ -107,27 +107,56 @@ class ViewController2: UIViewController {
         
         var imgDef = img+String(imgN)
         
+        print("\nPrimera rotacion-> PAG V: \(control.numImg) salvadoImg\(control.saveP)")
+        
         return String(seq: imgDef)
     }
     
+    
     @IBAction func swipeRightImage(sender: AnyObject) {
         
-        while (control.numImg>2){
-            imagenA.image=UIImage(named: img+String(control.numImg-2))
-            imagenB.image=UIImage(named: img+String(control.numImg-1))
+        if control.numImg>2{
+            
+            if control.numImg%2 != 0{ //impar
+                control.numImg=control.numImg-2
+                
+            }else{ //par
+                control.numImg=control.numImg-1
+                
+            }
+            control.saveP=control.numImg
+            imagenA.image=UIImage(named: img+String(control.numImg))
+            imagenB.image=UIImage(named: img+String(control.numImg+1))
+            
+          print("\nRight Antes PAG V: \(control.numImg) salvadoImg\(control.saveP)")
+           
         }
         
-        print("\nRight: \(control.numImg)")
+        print("\nRight Despues PAG V: \(control.numImg) salvadoImg\(control.saveP)")
         
     }
     
+    
     @IBAction func swipeLeftImage(sender: AnyObject) {
         
-        while (control.numImg<3){
-            imagenA.image=UIImage(named: img+String(control.numImg+2))
-            imagenB.image=UIImage(named: img+String(control.numImg+3))
-        }
+        if control.numImg<5{
+            
+            if control.numImg%2 != 0{
+                control.numImg=control.numImg+2
+                
+            }else{
+                control.numImg=control.numImg+1
+                
+            }
+            
+            control.saveP=control.numImg
+            
+            imagenA.image=UIImage(named: img+String(control.numImg))
+            imagenB.image=UIImage(named: img+String(control.numImg+1))
+            
+            print("\nLeft Antes PAG V: \(control.numImg) salvadoImg\(control.saveP)")
+                   }
         
-        print("\nLeft: \(control.numImg)")
+        print("\nLeft Despues PAG V: \(control.numImg) salvadoImg\(control.saveP)")
     }
 }

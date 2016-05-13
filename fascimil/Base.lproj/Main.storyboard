@@ -97,20 +97,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oDO-id-vsc">
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oDO-id-vsc">
                                 <rect key="frame" x="283" y="0.0" width="228" height="320"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="PJN-IP-0Ih" appends="YES" id="JYL-U6-M8q"/>
-                                    <outletCollection property="gestureRecognizers" destination="VJh-Bk-hJL" appends="YES" id="5U1-Oj-i1W"/>
+                                    <outletCollection property="gestureRecognizers" destination="Gap-hO-E9D" appends="YES" id="MrN-qK-1jh"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LjY-e6-Nt9">
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LjY-e6-Nt9">
                                 <rect key="frame" x="55" y="0.0" width="228" height="320"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Pii-do-PS0" appends="YES" id="A5r-fH-ntZ"/>
-                                    <outletCollection property="gestureRecognizers" destination="HGP-Il-nUA" appends="YES" id="Osu-a5-1Ny"/>
+                                    <outletCollection property="gestureRecognizers" destination="9gf-PG-TRW" appends="YES" id="0nn-4W-egn"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -135,14 +135,14 @@
                         <action selector="imgTapRight:" destination="Ojj-ON-Gr5" id="NF2-S7-Kiw"/>
                     </connections>
                 </tapGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="HGP-Il-nUA">
+                <swipeGestureRecognizer direction="right" id="9gf-PG-TRW">
                     <connections>
-                        <action selector="swipeRightImage:" destination="Ojj-ON-Gr5" id="T2o-lh-eRY"/>
+                        <action selector="swipeRightImage:" destination="Ojj-ON-Gr5" id="diZ-5e-mVh"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="VJh-Bk-hJL">
+                <swipeGestureRecognizer direction="left" id="Gap-hO-E9D">
                     <connections>
-                        <action selector="swipeRightImage:" destination="Ojj-ON-Gr5" id="tEc-y6-1bj"/>
+                        <action selector="swipeLeftImage:" destination="Ojj-ON-Gr5" id="H3d-97-Yag"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>

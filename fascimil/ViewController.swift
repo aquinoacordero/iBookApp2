@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     let img = "img"
     var imgN = 1
     var savePag = 1
+    //var imgNV=1
+    //var imgNH=1
     var imgDef = ""
     let control=Controllers.sharedInstance
     
@@ -30,7 +32,11 @@ class ViewController: UIViewController {
         
         savePag=control.saveP
         imgN=control.numImg
-        print("PAG: \(control.numImg) salvadoIMG: \(control.saveP)\n")
+        
+        /*imgNV=control.numImgV
+        imgNH=control.numImgH*/
+        
+        print("PAG V: \(control.numImg) salvadoIMG: \(control.saveP)\n")
         
         imgDef = img+String(control.saveP)
         
@@ -48,7 +54,7 @@ class ViewController: UIViewController {
             print("XxLandscapexX\n")
             control.position="Port"
             
-            print("\nEspera------------->\(control.position) and PAG:\(control.numImg)\n")
+            print("\nEspera------------->\(control.position) and PAG V:\(control.numImg)\n")
             
             let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let nextView = storyboard.instantiateViewControllerWithIdentifier("ViewController2") as ViewController2
@@ -84,13 +90,13 @@ class ViewController: UIViewController {
     
     @IBAction func swipeImagen(sender: AnyObject) {
         
-        if imgN<4{
+        if imgN<6{
             imgN++
             control.numImg=imgN
         }
         var imgDef=img+String(imgN)
         
-        print("PAG: \(control.numImg)\n")
+        print("PAG V: \(control.numImg) salvadoIMG: \(control.saveP)\n")
         chargueImage(imgDef)
     }
     
@@ -103,7 +109,7 @@ class ViewController: UIViewController {
         }
         var imgDef=img+String(imgN)
         
-        print("PAG: \(control.numImg)\n")
+        print("PAG V: \(control.numImg) salvadoIMG: \(control.saveP)\n")
         chargueImage(imgDef)
     }
     
