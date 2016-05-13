@@ -28,7 +28,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="imagen" destination="oQM-JY-uDy" id="KUi-tE-5OL"/>
                         <segue destination="Ojj-ON-Gr5" kind="show" identifier="push" id="hKa-RE-caA"/>
@@ -46,7 +47,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-828" y="-125"/>
+            <point key="canvasLocation" x="-768" y="-332"/>
         </scene>
         <!--View Controller3-->
         <scene sceneID="qf9-vZ-628">
@@ -60,17 +61,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3R5-g4-iC4">
-                                <rect key="frame" x="150" y="0.0" width="285" height="320"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01B-R0-mbZ">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01B-R0-mbZ">
                                 <rect key="frame" x="506" y="282" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="&lt;-"/>
                                 <connections>
                                     <segue destination="Ojj-ON-Gr5" kind="show" id="5fr-6D-SVB"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3R5-g4-iC4">
+                                <rect key="frame" x="170" y="0.0" width="228" height="320"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -83,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAT-QL-kGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-272" y="542"/>
+            <point key="canvasLocation" x="-370" y="118"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="ME2-NC-m2F">
@@ -97,18 +97,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LjY-e6-Nt9">
-                                <rect key="frame" x="0.0" y="0.0" width="285" height="320"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Pii-do-PS0" appends="YES" id="A5r-fH-ntZ"/>
-                                </connections>
-                            </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oDO-id-vsc">
-                                <rect key="frame" x="283" y="0.0" width="285" height="320"/>
+                                <rect key="frame" x="283" y="0.0" width="228" height="320"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="PJN-IP-0Ih" appends="YES" id="JYL-U6-M8q"/>
+                                    <outletCollection property="gestureRecognizers" destination="VJh-Bk-hJL" appends="YES" id="5U1-Oj-i1W"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LjY-e6-Nt9">
+                                <rect key="frame" x="55" y="0.0" width="228" height="320"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Pii-do-PS0" appends="YES" id="A5r-fH-ntZ"/>
+                                    <outletCollection property="gestureRecognizers" destination="HGP-Il-nUA" appends="YES" id="Osu-a5-1Ny"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -133,8 +135,18 @@
                         <action selector="imgTapRight:" destination="Ojj-ON-Gr5" id="NF2-S7-Kiw"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="HGP-Il-nUA">
+                    <connections>
+                        <action selector="swipeRightImage:" destination="Ojj-ON-Gr5" id="T2o-lh-eRY"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="VJh-Bk-hJL">
+                    <connections>
+                        <action selector="swipeRightImage:" destination="Ojj-ON-Gr5" id="tEc-y6-1bj"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-218" y="90"/>
+            <point key="canvasLocation" x="-175" y="-387"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

@@ -28,6 +28,8 @@ class ViewController2: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "rotated", name: UIDeviceOrientationDidChangeNotification, object: nil)
         
+        self.view.backgroundColor=UIColor.blackColor()
+        
         print("\nPAG-VIEW2: \(control.numImg)")
         
         savePag=control.numImg
@@ -108,4 +110,24 @@ class ViewController2: UIViewController {
         return String(seq: imgDef)
     }
     
+    @IBAction func swipeRightImage(sender: AnyObject) {
+        
+        while (control.numImg>2){
+            imagenA.image=UIImage(named: img+String(control.numImg-2))
+            imagenB.image=UIImage(named: img+String(control.numImg-1))
+        }
+        
+        print("\nRight: \(control.numImg)")
+        
+    }
+    
+    @IBAction func swipeLeftImage(sender: AnyObject) {
+        
+        while (control.numImg<3){
+            imagenA.image=UIImage(named: img+String(control.numImg+2))
+            imagenB.image=UIImage(named: img+String(control.numImg+3))
+        }
+        
+        print("\nLeft: \(control.numImg)")
+    }
 }

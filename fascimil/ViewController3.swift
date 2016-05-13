@@ -22,6 +22,7 @@ class ViewController3: UIViewController{
 
     override func viewDidLoad(){
         self.view.backgroundColor=UIColor.blackColor()
+        
         buttonArrow.setImage(UIImage(named: "leftBlueArrow"), forState: UIControlState.Normal)
         
         print("\n \(control.position) \(control.numImg)")
