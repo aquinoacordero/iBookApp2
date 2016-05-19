@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE109CFE1CEA1302006FF1FC /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE109CFD1CEA1302006FF1FC /* Details.swift */; };
 		BE4D274E1CE0735300D59DF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D274D1CE0735300D59DF8 /* AppDelegate.swift */; };
 		BE4D27501CE0735300D59DF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D274F1CE0735300D59DF8 /* ViewController.swift */; };
 		BE4D27531CE0735300D59DF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4D27511CE0735300D59DF8 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE109CFD1CEA1302006FF1FC /* Details.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 		BE4D27481CE0735300D59DF8 /* fascimil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fascimil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4D274C1CE0735300D59DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE4D274D1CE0735300D59DF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				BE4D274D1CE0735300D59DF8 /* AppDelegate.swift */,
 				BE4D274F1CE0735300D59DF8 /* ViewController.swift */,
 				BE4D27511CE0735300D59DF8 /* Main.storyboard */,
+				BE109CFD1CEA1302006FF1FC /* Details.swift */,
 				BEA6303A1CE4C960004BFDC6 /* ViewController3.swift */,
 				BE4D276F1CE0CA9900D59DF8 /* Controllers.swift */,
 				BE4D276D1CE08BD500D59DF8 /* ViewController2.swift */,
@@ -223,6 +226,7 @@
 			files = (
 				BEA6303B1CE4C961004BFDC6 /* ViewController3.swift in Sources */,
 				BE4D27501CE0735300D59DF8 /* ViewController.swift in Sources */,
+				BE109CFE1CEA1302006FF1FC /* Details.swift in Sources */,
 				BE4D274E1CE0735300D59DF8 /* AppDelegate.swift in Sources */,
 				BE4D276E1CE08BD500D59DF8 /* ViewController2.swift in Sources */,
 				BE4D27701CE0CA9900D59DF8 /* Controllers.swift in Sources */,

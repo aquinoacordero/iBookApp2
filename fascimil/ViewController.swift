@@ -33,8 +33,6 @@ class ViewController: UIViewController {
         savePag=control.saveP
         imgN=control.numImg
         
-        /*imgNV=control.numImgV
-        imgNH=control.numImgH*/
         
         print("PAG V: \(control.numImg) salvadoIMG: \(control.saveP)\n")
         
@@ -68,25 +66,6 @@ class ViewController: UIViewController {
         }
     }
     
-    /*override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        
-        if UIDevice.currentDevice().orientation.isLandscape.boolValue{
-            
-            print("landscape \n")
-            dispatch_async(dispatch_get_main_queue()){
-                self.performSegueWithIdentifier("push", sender: self)
-            }
-            //transitionLand()
-            
-        }else{
-            
-            print("portrait \n")
-            dispatch_async(dispatch_get_main_queue()){
-                self.performSegueWithIdentifier("push2", sender: ViewController2.self)
-            }
-            //transitionPort()
-        }
-    }*/
     
     @IBAction func swipeImagen(sender: AnyObject) {
         
@@ -118,21 +97,6 @@ class ViewController: UIViewController {
         imagen.image=UIImage(named: imgDef)
         
     }
-    
-    /*override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if(segue.identifier == "push"){
-            segue.destinationViewController as? ViewController2
-        }
-        else if(segue.identifier == "push2"){
-            segue.destinationViewController as? ViewController
-        }
-    }*/
-    
-    /*func transitionLand(){
-        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let nextView = storyboard.instantiateViewControllerWithIdentifier("ViewController2") as ViewController2
-        self.presentViewController(nextView, animated: true, completion: nil)
-    }*/
 
 }
 

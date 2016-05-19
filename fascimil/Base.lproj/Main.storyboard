@@ -47,7 +47,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-768" y="-332"/>
+            <point key="canvasLocation" x="-648" y="-238"/>
         </scene>
         <!--View Controller3-->
         <scene sceneID="qf9-vZ-628">
@@ -68,7 +68,7 @@
                                     <segue destination="Ojj-ON-Gr5" kind="show" id="5fr-6D-SVB"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3R5-g4-iC4">
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3R5-g4-iC4">
                                 <rect key="frame" x="170" y="0.0" width="228" height="320"/>
                             </imageView>
                         </subviews>
@@ -83,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAT-QL-kGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-370" y="118"/>
+            <point key="canvasLocation" x="-190" y="-18"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="ME2-NC-m2F">
@@ -146,7 +146,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-175" y="-387"/>
+            <point key="canvasLocation" x="48" y="-390"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

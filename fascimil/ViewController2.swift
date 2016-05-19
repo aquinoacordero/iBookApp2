@@ -54,6 +54,30 @@ class ViewController2: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func viewCurlUpLeft(view:UIImageView,animationTime:Int){
+        
+        UIImageView.beginAnimations(nil, context: nil)
+        UIImageView.setAnimationCurve(UIViewAnimationCurve.EaseInOut)
+        UIImageView.setAnimationDuration(NSTimeInterval(animationTime))
+        UIImageView.setAnimationTransition(UIViewAnimationTransition.CurlUp, forView: view, cache: false)
+        
+        UIImageView.commitAnimations()
+        
+        print("\n...............\n")
+    }
+    
+    func viewCurlUpRight(view:UIImageView,animationTime:Int){
+        
+        UIImageView.beginAnimations(nil, context: nil)
+        UIImageView.setAnimationCurve(UIViewAnimationCurve.EaseInOut)
+        UIImageView.setAnimationDuration(NSTimeInterval(animationTime))
+        UIImageView.setAnimationTransition(UIViewAnimationTransition.CurlDown, forView: view, cache: false)
+        
+        UIImageView.commitAnimations()
+        
+        print("\n................\n")
+    }
+    
     @IBAction func imgTapLeft(sender: AnyObject) {
         
         control.position="L"
@@ -117,6 +141,8 @@ class ViewController2: UIViewController {
         
         if control.numImg>2{
             
+            viewCurlUpRight(imagenA, animationTime: 1)
+            
             if control.numImg%2 != 0{ //impar
                 control.numImg=control.numImg-2
                 
@@ -140,6 +166,8 @@ class ViewController2: UIViewController {
     @IBAction func swipeLeftImage(sender: AnyObject) {
         
         if control.numImg<5{
+
+            viewCurlUpLeft(imagenB, animationTime: 1)
             
             if control.numImg%2 != 0{
                 control.numImg=control.numImg+2
@@ -159,4 +187,5 @@ class ViewController2: UIViewController {
         
         print("\nLeft Despues PAG V: \(control.numImg) salvadoImg\(control.saveP)")
     }
+    
 }

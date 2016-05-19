@@ -26,6 +26,5 @@ class Controllers {
     var position : String!
     var numImg : Int = 1
     var saveP : Int = 1
-    var numImgH:Int = 1
-    var numImgV:Int = 1
+
 }

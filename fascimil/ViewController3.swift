@@ -18,7 +18,12 @@ class ViewController3: UIViewController{
     
     var img = "img"
     var num = 1
+    var page = ""
+    var aZoom = false
+    var len = 1
     let control=Controllers.sharedInstance
+    let details=Details.sharedInstance
+    var arrayButtons = [UIButton]()
 
     override func viewDidLoad(){
         self.view.backgroundColor=UIColor.blackColor()
@@ -38,9 +43,43 @@ class ViewController3: UIViewController{
             imagen.image=UIImage(named: imgDetail)
         }
         
+        page=img+String(num)
+        
+        print("\nPagina a ver detalles: \(page)")
+        
+        arrayButtons = details.details(page)
+        
+        len=arrayButtons.count
+        
+        print("\n \(len)")
+        
+        chargeButtons()
+  
     }
     
     override func didReceiveMemoryWarning() {
         
     }
+
+    func chargeButtons(){
+        var x=0
+        let but="button"
+        let act="Action:"
+        
+        while(x<len){
+            var butAct=but+String(x)+act
+            print("\n \(butAct)")
+            //arrayButtons[x].addTarget(self,action: butAct, forControlEvents: UIControlEvents.TouchUpInside)
+            imagen.addSubview(arrayButtons[x])
+            x++
+        }
+    }
+    
+    func button1Action(sender: UIButton){
+    
+    println("BUTTON1")
+  
+    
+    }
+
 }
