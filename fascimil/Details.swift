@@ -34,41 +34,62 @@ class Details{
             print("\n Etrar entro\n")
             
             var button1 = UIButton.buttonWithType(UIButtonType.ContactAdd) as UIButton
-            button1.frame = CGRectMake(110,110,25,25)
+            button1.frame = CGRectMake(120,50,25,25)
             
             var button2 = UIButton.buttonWithType(UIButtonType.ContactAdd) as UIButton
-            button2.frame = CGRectMake(220,220,25,25)
+            button2.frame = CGRectMake(120,110,25,25)
+            
+            var button3 = UIButton.buttonWithType(UIButtonType.ContactAdd) as UIButton
+            button3.frame = CGRectMake(140,220,25,25)
             
             arrayButtons.insert(button1, atIndex: 0)
             arrayButtons.insert(button2, atIndex: 1)
+            arrayButtons.insert(button3, atIndex: 2)
            
         }
         if page == "img2"{
             
             var button1 = UIButton.buttonWithType(UIButtonType.ContactAdd) as UIButton
-            button1.frame = CGRectMake(20,20,25,25)
+            button1.frame = CGRectMake(20,30,25,25)
             
+            var button2 = UIButton.buttonWithType(UIButtonType.ContactAdd) as UIButton
+            button2.frame = CGRectMake(105,25,25,25)
+            
+            var button3 = UIButton.buttonWithType(UIButtonType.ContactAdd) as UIButton
+            button3.frame = CGRectMake(120,65,25,25)
+            
+            var button4 = UIButton.buttonWithType(UIButtonType.ContactAdd) as UIButton
+            button4.frame = CGRectMake(50,90,25,25)
+            
+            var button5 = UIButton.buttonWithType(UIButtonType.ContactAdd) as UIButton
+            button5.frame = CGRectMake(135,90,25,25)
+            
+            var button6 = UIButton.buttonWithType(UIButtonType.ContactAdd) as UIButton
+            button6.frame = CGRectMake(20,180,25,25)
+        
             arrayButtons.insert(button1, atIndex: 0)
+            arrayButtons.insert(button2, atIndex: 1)
+            arrayButtons.insert(button3, atIndex: 2)
+            arrayButtons.insert(button4, atIndex: 3)
+            arrayButtons.insert(button5, atIndex: 4)
+            arrayButtons.insert(button6, atIndex: 5)
             
         }
         if page == "img3"{
             
             var button1 = UIButton.buttonWithType(UIButtonType.ContactAdd) as UIButton
-            button1.frame = CGRectMake(110,110,25,25)
+            button1.frame = CGRectMake(70,90,25,25)
             
             var button2 = UIButton.buttonWithType(UIButtonType.ContactAdd) as UIButton
-            button2.frame = CGRectMake(220,220,25,25)
+            button2.frame = CGRectMake(135,90,25,25)
             
             var button3 = UIButton.buttonWithType(UIButtonType.ContactAdd) as UIButton
-            button1.frame = CGRectMake(110,10,25,25)
-            
-            var button4 = UIButton.buttonWithType(UIButtonType.ContactAdd) as UIButton
-            button2.frame = CGRectMake(220,20,25,25)
+            button3.frame = CGRectMake(110,200,25,25)
             
             arrayButtons.insert(button1, atIndex: 0)
             arrayButtons.insert(button2, atIndex: 1)
             arrayButtons.insert(button3, atIndex: 2)
-            arrayButtons.insert(button4, atIndex: 3)
+
         }
         if page == "img4"{
 

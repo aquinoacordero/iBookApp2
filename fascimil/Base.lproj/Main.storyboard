@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -70,7 +70,18 @@
                             </button>
                             <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3R5-g4-iC4">
                                 <rect key="frame" x="170" y="0.0" width="228" height="320"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hge-nZ-qCn" appends="YES" id="lhi-l3-pZg"/>
+                                </connections>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottomLeft" fixedFrame="YES" maximumZoomScale="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZLg-WL-0G6">
+                                <rect key="frame" x="0.0" y="199" width="240" height="121"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -78,12 +89,18 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="buttonArrow" destination="01B-R0-mbZ" id="nrd-YM-Kk6"/>
+                        <outlet property="detailsText" destination="ZLg-WL-0G6" id="e4P-wV-G0R"/>
                         <outlet property="imagen" destination="3R5-g4-iC4" id="igN-HX-oBj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAT-QL-kGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hge-nZ-qCn">
+                    <connections>
+                        <action selector="tapImage:" destination="6jp-2b-mO8" id="8f2-NQ-YXx"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-190" y="-18"/>
+            <point key="canvasLocation" x="-128" y="-6"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="ME2-NC-m2F">

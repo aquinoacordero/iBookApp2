@@ -15,6 +15,7 @@ class ViewController3: UIViewController{
     
     @IBOutlet weak var imagen: UIImageView!
     @IBOutlet weak var buttonArrow: UIButton!
+    @IBOutlet weak var detailsText: UITextView!
     
     var img = "img"
     var num = 1
@@ -27,6 +28,8 @@ class ViewController3: UIViewController{
 
     override func viewDidLoad(){
         self.view.backgroundColor=UIColor.blackColor()
+        
+        detailsText.hidden=true
         
         buttonArrow.setImage(UIImage(named: "leftBlueArrow"), forState: UIControlState.Normal)
         
@@ -63,23 +66,101 @@ class ViewController3: UIViewController{
 
     func chargeButtons(){
         var x=0
-        let but="button"
-        let act="Action:"
         
         while(x<len){
-            var butAct=but+String(x)+act
-            print("\n \(butAct)")
-            //arrayButtons[x].addTarget(self,action: butAct, forControlEvents: UIControlEvents.TouchUpInside)
+            arrayButtons[x].addTarget(self,action: "button1Action:", forControlEvents: UIControlEvents.TouchUpInside)
+            arrayButtons[x].tag=x
             imagen.addSubview(arrayButtons[x])
             x++
         }
     }
     
     func button1Action(sender: UIButton){
-    
-    println("BUTTON1")
-  
-    
+        
+    print("\n \(img+String(num))\n")
+        
+        if (img+String(num)=="img1"){
+            
+            if(sender.tag==0){
+                print("BUTTON0")
+                
+                arrayButtons[0].removeFromSuperview()
+                
+                if aZoom==false{
+                    self.imagen.transform=CGAffineTransformScale(self.imagen.transform, 4, 4)
+                    self.imagen.transform=CGAffineTransformTranslate(self.imagen.transform, 0, 80)
+                    aZoom=true
+                    detailsText.hidden=false
+                }else{
+                    
+                }
+            }
+            if(sender.tag==1){
+                print("BUTTON1")
+            }
+            if(sender.tag==2){
+                print("Button2")
+            }
+        }
+        
+        if (img+String(num)=="img2"){
+            
+            if(sender.tag==0){
+                print("BUTTON0")
+                
+                arrayButtons[0].removeFromSuperview()
+                
+                if aZoom==false{
+                    self.imagen.transform=CGAffineTransformScale(self.imagen.transform, 4, 4)
+                    self.imagen.transform=CGAffineTransformTranslate(self.imagen.transform, 40, 100)
+                    aZoom=true
+                }else{
+                    
+                }
+            }
+            if(sender.tag==1){
+                print("BUTTON1")
+            }
+            if(sender.tag==2){
+                print("Button2")
+            }
+        }
+        
+        if (img+String(num)=="img3"){
+            
+            if(sender.tag==0){
+                print("BUTTON0")
+                
+                arrayButtons[0].removeFromSuperview()
+                
+                if aZoom==false{
+                    self.imagen.transform=CGAffineTransformScale(self.imagen.transform, 4, 4)
+                    self.imagen.transform=CGAffineTransformTranslate(self.imagen.transform, 40, 60)
+                    aZoom=true
+                }else{
+                    
+                }
+            }
+            if(sender.tag==1){
+                print("BUTTON1")
+            }
+            if(sender.tag==2){
+                print("Button2")
+            }
+        }
+        
     }
 
+    @IBAction func tapImage(sender: AnyObject) {
+        
+        if aZoom==true{
+            self.imagen.transform=CGAffineTransformScale(self.imagen.transform, 0.5, 0.5)
+            self.imagen.transform=CGAffineTransformMakeTranslation(0, 0)
+            aZoom=false
+        }else{
+            
+        }
+        
+        chargeButtons()
+    }
 }
