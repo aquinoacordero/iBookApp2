@@ -30,6 +30,10 @@ class ViewController3: UIViewController{
         self.view.backgroundColor=UIColor.blackColor()
         
         detailsText.hidden=true
+        detailsText.layer.masksToBounds=true
+        detailsText.layer.borderColor=UIColor.cyanColor().CGColor
+        detailsText.layer.borderWidth = 2.0
+        detailsText.layer.cornerRadius = 6.0
         
         buttonArrow.setImage(UIImage(named: "leftBlueArrow"), forState: UIControlState.Normal)
         
@@ -161,6 +165,7 @@ class ViewController3: UIViewController{
             
         }
         
+        detailsText.hidden=true
         chargeButtons()
     }
 }
