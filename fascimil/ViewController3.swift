@@ -27,19 +27,22 @@ class ViewController3: UIViewController{
     var arrayButtons = [UIButton]()
 
     override func viewDidLoad(){
+        
         self.view.backgroundColor=UIColor.blackColor()
         
         detailsText.hidden=true
         detailsText.layer.masksToBounds=true
         detailsText.layer.borderColor=UIColor.cyanColor().CGColor
-        detailsText.layer.borderWidth = 2.0
+        detailsText.layer.borderWidth = 1.0
         detailsText.layer.cornerRadius = 6.0
         
         buttonArrow.setImage(UIImage(named: "leftBlueArrow"), forState: UIControlState.Normal)
         
-        print("\n \(control.position) \(control.numImg)")
+        print("\n Position:\(control.position) numImg:\(control.numImg)")
         
         num=control.numImg
+        
+        print("\n NUMERO pag: \(num)")
         
         if control.position=="L" && num%2 != 0{
             var imgDetail=img+String(num)
@@ -58,7 +61,7 @@ class ViewController3: UIViewController{
         
         len=arrayButtons.count
         
-        print("\n \(len)")
+        print("\nlong Array: \(len)")
         
         chargeButtons()
   

@@ -15,12 +15,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var imagen: UIImageView!
 
     let img = "img"
+    var page = ""
     var imgN = 1
     var savePag = 1
-    //var imgNV=1
-    //var imgNH=1
+    var len = 1
     var imgDef = ""
+    var arrayButtons = [UIButton]()
     let control=Controllers.sharedInstance
+    let details=Details.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +42,13 @@ class ViewController: UIViewController {
         
         imagen.image=UIImage(named: imgDef)
         
+        page=img+String(imgN)
+        
+        arrayButtons = details.details(page)
+        
+        len=arrayButtons.count
+        
+        chargeButtons()
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,6 +77,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func swipeImagen(sender: AnyObject) {
+        deletButtons()
         
         if imgN<6{
             imgN++
@@ -76,11 +86,15 @@ class ViewController: UIViewController {
         var imgDef=img+String(imgN)
         
         print("PAG V: \(control.numImg) salvadoIMG: \(control.saveP)\n")
+        actDetailArray()
         chargueImage(imgDef)
+        chargeButtons()
+        
     }
     
     
     @IBAction func swipeImagenRight(sender: AnyObject) {
+        deletButtons()
         
         if imgN>1{
             imgN--
@@ -89,12 +103,46 @@ class ViewController: UIViewController {
         var imgDef=img+String(imgN)
         
         print("PAG V: \(control.numImg) salvadoIMG: \(control.saveP)\n")
+        actDetailArray()
         chargueImage(imgDef)
+        chargeButtons()
     }
     
     func chargueImage(imgDef:String){
 
         imagen.image=UIImage(named: imgDef)
+        
+    }
+    
+    func chargeButtons(){
+        var x=0
+        
+        while(x<len){
+            arrayButtons[x].addTarget(self,action: "button1Action:", forControlEvents: UIControlEvents.TouchUpInside)
+            arrayButtons[x].tag=x
+            imagen.addSubview(arrayButtons[x])
+            x++
+        }
+    }
+    
+    func deletButtons(){
+        var x=0
+        
+        while(x<len){
+            arrayButtons[x].removeFromSuperview()
+            x++
+        }
+
+    }
+    
+    func actDetailArray(){
+        
+        page=img+String(imgN)
+        
+        arrayButtons = details.details(page)
+        
+        len=arrayButtons.count
+
         
     }
 

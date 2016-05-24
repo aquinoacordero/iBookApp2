@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE07D88E1CF449D5005BEF2F /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE07D88D1CF449D5005BEF2F /* ViewController4.swift */; };
 		BE109CFE1CEA1302006FF1FC /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE109CFD1CEA1302006FF1FC /* Details.swift */; };
 		BE4D274E1CE0735300D59DF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D274D1CE0735300D59DF8 /* AppDelegate.swift */; };
 		BE4D27501CE0735300D59DF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D274F1CE0735300D59DF8 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE07D88D1CF449D5005BEF2F /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		BE109CFD1CEA1302006FF1FC /* Details.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 		BE4D27481CE0735300D59DF8 /* fascimil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fascimil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4D274C1CE0735300D59DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,12 +88,13 @@
 			isa = PBXGroup;
 			children = (
 				BE4D274D1CE0735300D59DF8 /* AppDelegate.swift */,
-				BE4D274F1CE0735300D59DF8 /* ViewController.swift */,
 				BE4D27511CE0735300D59DF8 /* Main.storyboard */,
 				BE109CFD1CEA1302006FF1FC /* Details.swift */,
-				BEA6303A1CE4C960004BFDC6 /* ViewController3.swift */,
 				BE4D276F1CE0CA9900D59DF8 /* Controllers.swift */,
+				BE4D274F1CE0735300D59DF8 /* ViewController.swift */,
 				BE4D276D1CE08BD500D59DF8 /* ViewController2.swift */,
+				BEA6303A1CE4C960004BFDC6 /* ViewController3.swift */,
+				BE07D88D1CF449D5005BEF2F /* ViewController4.swift */,
 				BE4D27541CE0735300D59DF8 /* Images.xcassets */,
 				BE4D27561CE0735300D59DF8 /* LaunchScreen.xib */,
 				BE4D274B1CE0735300D59DF8 /* Supporting Files */,
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEA6303B1CE4C961004BFDC6 /* ViewController3.swift in Sources */,
+				BE07D88E1CF449D5005BEF2F /* ViewController4.swift in Sources */,
 				BE4D27501CE0735300D59DF8 /* ViewController.swift in Sources */,
 				BE109CFE1CEA1302006FF1FC /* Details.swift in Sources */,
 				BE4D274E1CE0735300D59DF8 /* AppDelegate.swift in Sources */,

@@ -24,6 +24,15 @@
                                     <outletCollection property="gestureRecognizers" destination="aEd-Mv-kbK" appends="YES" id="9sd-vH-bjt"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1g4-g7-jO2">
+                                <rect key="frame" x="7" y="514" width="68" height="46"/>
+                                <state key="normal" title="Book" image="iconBook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pza-od-vea" kind="show" id="Ucd-gB-Ib8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -47,7 +56,56 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-648" y="-238"/>
+            <point key="canvasLocation" x="-578" y="-330"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="s7o-Fs-q0E">
+            <objects>
+                <viewController id="pza-od-vea" customClass="ViewController4" customModule="fascimil" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fiv-gS-nTi"/>
+                        <viewControllerLayoutGuide type="bottom" id="VMp-qt-t4S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cze-c8-me8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" translatesAutoresizingMaskIntoConstraints="NO" id="rQX-BJ-KsS">
+                                <rect key="frame" x="0.0" y="28" width="320" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="qsG-dv-qSQ" appends="YES" id="gci-YR-oTO"/>
+                                </connections>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUa-SF-fvk">
+                                <rect key="frame" x="126" y="497" width="68" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="&lt;-">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="7d3-Aj-oEQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="textView" destination="rQX-BJ-KsS" id="eWZ-w5-Edq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPV-qj-8uK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="qsG-dv-qSQ">
+                    <connections>
+                        <action selector="SwipeLeftText:" destination="pza-od-vea" id="KwD-fE-4Is"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-414" y="389"/>
         </scene>
         <!--View Controller3-->
         <scene sceneID="qf9-vZ-628">
@@ -61,13 +119,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01B-R0-mbZ">
-                                <rect key="frame" x="506" y="282" width="46" height="30"/>
-                                <state key="normal" title="&lt;-"/>
-                                <connections>
-                                    <segue destination="Ojj-ON-Gr5" kind="show" id="5fr-6D-SVB"/>
-                                </connections>
-                            </button>
                             <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3R5-g4-iC4">
                                 <rect key="frame" x="170" y="0.0" width="228" height="320"/>
                                 <gestureRecognizers/>
@@ -83,6 +134,13 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01B-R0-mbZ">
+                                <rect key="frame" x="506" y="282" width="46" height="30"/>
+                                <state key="normal" title="&lt;-"/>
+                                <connections>
+                                    <segue destination="Ojj-ON-Gr5" kind="show" id="5fr-6D-SVB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -101,7 +159,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-128" y="-6"/>
+            <point key="canvasLocation" x="60" y="116"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="ME2-NC-m2F">
@@ -167,7 +225,11 @@
             <point key="canvasLocation" x="48" y="-390"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iconBook" width="200" height="150"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5fr-6D-SVB"/>
+        <segue reference="7d3-Aj-oEQ"/>
+        <segue reference="hKa-RE-caA"/>
     </inferredMetricsTieBreakers>
 </document>
