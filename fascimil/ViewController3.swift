@@ -41,14 +41,21 @@ class ViewController3: UIViewController{
         print("\n Position:\(control.position) numImg:\(control.numImg)")
         
         num=control.numImg
+        if(num%2 == 0){
+            num--
+        }
         
         print("\n NUMERO pag: \(num)")
         
         if control.position=="L" && num%2 != 0{
+            print("\nholas")
             var imgDetail=img+String(num)
             imagen.image=UIImage(named: imgDetail)
         }else{
+            print("\nAqui")
+            print("\nnum: \(num)")
             num++
+            print("\nnum: \(num)")
             var imgDetail=img+String(num)
             imagen.image=UIImage(named: imgDetail)
         }
